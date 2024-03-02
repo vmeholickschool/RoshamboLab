@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//Create subclass Human player that allows the suser to select and throw a value
+//Create subclass Human player that allows the user to select and throw a value
 //and allows user to input their name
 
 namespace RoshamboLab
