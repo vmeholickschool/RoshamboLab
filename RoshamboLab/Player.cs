@@ -12,11 +12,9 @@ namespace RoshamboLab
     public abstract class Player
     {
         public abstract string Name { get; }
-        public abstract string RoshamboValue { get; }
+        protected Random random;
 
-        public string GenerateRoshambo()
-        {
-            return RoshamboValue;
-        }
+
+        public abstract Roshambo GenerateRoshambo();
     }
 }

@@ -3,18 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Create a subclass for RockPlayer that always throws a rock
 namespace RoshamboLab
 {
-    internal class RockPlayer : Player
+    public class RockPlayer : Player
     {
-        public override string Name { get; } = "Always throws Rock";
+        public override string Name { get; }
 
-        public override string RoshamboValue { get; }
+        public RockPlayer() { }
 
-        public RockPlayer(string roshamboValue)
+        public override Roshambo GenerateRoshambo()
         {
-            RoshamboValue = roshamboValue;
+            return Roshambo.rock;
         }
     }
 }
